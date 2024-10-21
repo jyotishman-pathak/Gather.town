@@ -1,0 +1,20 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+ "scripts": {
+  "build": "tsc",                                     
+  "start": "node dist/index.js",                       
+  "dev": "concurrently \"tsc -w\" \"nodemon dist/index.js\"",  
+  "serve": "concurrently \"tsc -w\" \"ts-node src/index.ts\""
+}
+,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.7.7",
+    "typescript": "^5.6.3"
+  }
+}
